@@ -15,5 +15,8 @@
 *-cache.lib
 *-rescue.lib
 
+# Manufacturing files
+production/
+
 # DS_Store
 .DS_Store
