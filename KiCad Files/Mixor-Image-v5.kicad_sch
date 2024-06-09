@@ -6437,7 +6437,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical"
+		(property "Footprint" "PCM_Resistor_SMD_AKL:R_0201_0603Metric"
 			(at 80.264 29.464 90)
 			(effects
 				(font
@@ -10624,7 +10624,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "d061f0c5-84aa-4933-a92e-6bfa734198aa")
+			(uuid "d061f0c5-84aa-4933-a92e-6bfa734198ab")
 		)
 		(instances
 			(project ""
@@ -10690,7 +10690,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "d061f0c5-84aa-4933-a92e-6bfa734198aa")
+			(uuid "d061f0c5-84aa-4933-a92e-6bfa734198ac")
 		)
 		(instances
 			(project ""
