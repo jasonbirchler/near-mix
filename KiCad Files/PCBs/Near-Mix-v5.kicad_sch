@@ -5,11 +5,11 @@
 	(uuid "ad117810-8012-476c-89f1-2f634e0b0298")
 	(paper "A4")
 	(title_block
-		(title "Mixor Image")
-		(date "2022-03-31")
-		(rev "5")
-		(company "Modular Maculata")
-		(comment 1 "(inspired by nearness mixer)")
+		(title "${product}")
+		(date "2024-10-23")
+		(rev "6")
+		(company "${company}")
+		(comment 1 "(derived from mixor image, inspired by nearness mixer)")
 		(comment 2 "CONSTANT POWER PANNING (-35, -15, 0, 15, 35)")
 	)
 	(lib_symbols

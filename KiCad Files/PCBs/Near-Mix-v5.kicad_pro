@@ -434,7 +434,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "Mixor-Image-v5.kicad_pro",
+    "filename": "Near-Mix-v5.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -704,5 +704,8 @@
       "Root"
     ]
   ],
-  "text_variables": {}
+  "text_variables": {
+    "company": "Common Denominator Devices",
+    "product": "A Near Mix"
+  }
 }
