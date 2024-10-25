@@ -8912,7 +8912,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_1206_3216Metric"
+		(property "Footprint" "Diode_SMD:D_SOD-123F"
 			(at 218.44 157.48 0)
 			(effects
 				(font
@@ -8980,7 +8980,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_1206_3216Metric"
+		(property "Footprint" "Diode_SMD:D_SOD-123F"
 			(at 218.44 139.7 0)
 			(effects
 				(font
@@ -10348,7 +10348,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "64f2221f-6c14-445f-9862-4d909f176f86")
+			(uuid "64f2221f-6c14-445f-9862-4d909f176f87")
 		)
 		(instances
 			(project ""
