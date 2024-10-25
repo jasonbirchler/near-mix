@@ -7,7 +7,7 @@
 	(title_block
 		(title "${product}")
 		(date "2024-10-23")
-		(rev "6")
+		(rev "${revision}")
 		(company "${company}")
 		(comment 1 "(derived from mixor image, inspired by nearness mixer)")
 		(comment 2 "CONSTANT POWER PANNING (-35, -15, 0, 15, 35)")
@@ -1862,6 +1862,93 @@
 				)
 			)
 		)
+		(symbol "PCM_4ms_Power-symbol:PWR_FLAG"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "pwr"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
 		(symbol "power:+12V"
 			(power)
 			(pin_names
@@ -2308,6 +2395,12 @@
 		(uuid "14140bce-0b3a-48f5-9e90-3f173ef08ac5")
 	)
 	(junction
+		(at 215.265 148.59)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "14fecd17-6eb9-497a-9025-29797dfe8aec")
+	)
+	(junction
 		(at 102.87 39.37)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2330,12 +2423,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "221b0875-70c5-468e-9040-dccc8c81f28a")
-	)
-	(junction
-		(at 216.535 148.59)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2766a0a3-6fd8-4c3b-baa0-d700b7477881")
 	)
 	(junction
 		(at 180.34 43.18)
@@ -2524,12 +2611,6 @@
 		(uuid "b448c98e-b67a-46e7-9ff6-d68c0967d082")
 	)
 	(junction
-		(at 209.55 148.59)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b60bfe54-1722-410e-91bc-538c62205d09")
-	)
-	(junction
 		(at 73.66 95.25)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2552,6 +2633,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c2dcf6f4-c0e6-47f9-a722-51559224f26c")
+	)
+	(junction
+		(at 161.29 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c56ff49f-da0e-415d-aaf1-913aa83014ef")
 	)
 	(junction
 		(at 237.49 148.59)
@@ -2606,6 +2693,14 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f653a2c0-7aa7-42d7-b739-b5943d9e5c6e")
+	)
+	(no_connect
+		(at 41.91 182.88)
+		(uuid "006ca44e-4c4d-431c-82a9-d8da4cf8cfb7")
+	)
+	(no_connect
+		(at 41.91 163.83)
+		(uuid "d863ba2d-dd1e-4c86-be26-4803c5a03cb3")
 	)
 	(wire
 		(pts
@@ -2756,6 +2851,16 @@
 			(type default)
 		)
 		(uuid "17e271c1-9d14-40bc-a548-25d593a97080")
+	)
+	(wire
+		(pts
+			(xy 200.66 148.59) (xy 215.265 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e24ea23-eec1-4fa2-bcf5-a6798584a7cc")
 	)
 	(wire
 		(pts
@@ -3079,16 +3184,6 @@
 	)
 	(wire
 		(pts
-			(xy 209.55 148.59) (xy 200.66 148.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "43a7bd38-51e6-4d11-8daf-62ec52f6e592")
-	)
-	(wire
-		(pts
 			(xy 222.25 139.7) (xy 227.33 139.7)
 		)
 		(stroke
@@ -3226,16 +3321,6 @@
 			(type default)
 		)
 		(uuid "52c9d648-ddc9-424c-8e2e-7be773020d88")
-	)
-	(wire
-		(pts
-			(xy 209.55 148.59) (xy 216.535 148.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "558dfe4f-59cd-4fed-b6a2-83541c6d50cb")
 	)
 	(wire
 		(pts
@@ -3466,6 +3551,16 @@
 			(type default)
 		)
 		(uuid "7c3025cc-f7f3-4695-a96c-4837a1407f2f")
+	)
+	(wire
+		(pts
+			(xy 215.265 148.59) (xy 227.33 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d1fbcc7-5813-4a9c-a0c7-79cbfd53ef42")
 	)
 	(wire
 		(pts
@@ -3966,16 +4061,6 @@
 			(type default)
 		)
 		(uuid "ac72d246-4e39-4782-8577-45382187fe86")
-	)
-	(wire
-		(pts
-			(xy 216.535 148.59) (xy 227.33 148.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ad13ec52-783d-4128-b13f-807e33696c63")
 	)
 	(wire
 		(pts
@@ -4639,6 +4724,17 @@
 		)
 		(uuid "92b4236c-ace9-46be-b0cd-9be4c865dc2b")
 	)
+	(label "CEN_IN_1_net"
+		(at 49.8475 73.66 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0a7e8479-b854-472a-80a5-f0f605061292")
+	)
 	(symbol
 		(lib_id "Connector_Audio:AudioJack2_SwitchT")
 		(at 36.83 30.48 0)
@@ -4667,7 +4763,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "thonk:Jack_3.5mm_QingPu_WQP-PJ301M-12_Vertical"
+		(property "Footprint" "Audio Jacks:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical"
 			(at 36.83 30.48 0)
 			(effects
 				(font
@@ -4740,7 +4836,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "AudioJacks:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical"
+		(property "Footprint" "Audio Jacks:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical"
 			(at 36.83 52.07 0)
 			(effects
 				(font
@@ -4813,7 +4909,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "AudioJacks:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical"
+		(property "Footprint" "Audio Jacks:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical"
 			(at 36.83 73.66 0)
 			(effects
 				(font
@@ -4886,7 +4982,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "AudioJacks:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical"
+		(property "Footprint" "Audio Jacks:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical"
 			(at 36.83 95.25 0)
 			(effects
 				(font
@@ -4959,7 +5055,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "AudioJacks:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical"
+		(property "Footprint" "Audio Jacks:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical"
 			(at 36.83 116.84 0)
 			(effects
 				(font
@@ -5032,7 +5128,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "AudioJacks:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical"
+		(property "Footprint" "Audio Jacks:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical"
 			(at 36.83 138.43 0)
 			(effects
 				(font
@@ -5105,7 +5201,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "AudioJacks:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical"
+		(property "Footprint" "Audio Jacks:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical"
 			(at 36.83 166.37 0)
 			(effects
 				(font
@@ -5178,7 +5274,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "AudioJacks:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical"
+		(property "Footprint" "Audio Jacks:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical"
 			(at 36.83 185.42 0)
 			(effects
 				(font
@@ -5640,7 +5736,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical"
+		(property "Footprint" "PCM_4ms_Resistor:R_1206_3216Metric"
 			(at 64.516 78.994 90)
 			(effects
 				(font
@@ -5772,7 +5868,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical"
+		(property "Footprint" "PCM_4ms_Resistor:R_1206_3216Metric"
 			(at 80.264 72.644 90)
 			(effects
 				(font
@@ -5839,7 +5935,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical"
+		(property "Footprint" "PCM_4ms_Resistor:R_1206_3216Metric"
 			(at 80.264 81.534 90)
 			(effects
 				(font
@@ -5906,7 +6002,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical"
+		(property "Footprint" "PCM_4ms_Resistor:R_1206_3216Metric"
 			(at 80.264 94.234 90)
 			(effects
 				(font
@@ -5973,7 +6069,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical"
+		(property "Footprint" "PCM_4ms_Resistor:R_1206_3216Metric"
 			(at 80.264 103.124 90)
 			(effects
 				(font
@@ -6040,7 +6136,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical"
+		(property "Footprint" "PCM_4ms_Resistor:R_1206_3216Metric"
 			(at 80.264 115.824 90)
 			(effects
 				(font
@@ -6107,7 +6203,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical"
+		(property "Footprint" "PCM_4ms_Resistor:R_1206_3216Metric"
 			(at 80.264 124.714 90)
 			(effects
 				(font
@@ -6174,7 +6270,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical"
+		(property "Footprint" "PCM_4ms_Resistor:R_1206_3216Metric"
 			(at 80.264 137.414 90)
 			(effects
 				(font
@@ -6241,7 +6337,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical"
+		(property "Footprint" "PCM_4ms_Resistor:R_1206_3216Metric"
 			(at 80.264 146.304 90)
 			(effects
 				(font
@@ -6308,7 +6404,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical"
+		(property "Footprint" "PCM_4ms_Resistor:R_1206_3216Metric"
 			(at 80.264 51.054 90)
 			(effects
 				(font
@@ -6375,7 +6471,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical"
+		(property "Footprint" "PCM_4ms_Resistor:R_1206_3216Metric"
 			(at 80.264 59.944 90)
 			(effects
 				(font
@@ -6442,7 +6538,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical"
+		(property "Footprint" "PCM_4ms_Resistor:R_1206_3216Metric"
 			(at 80.264 29.464 90)
 			(effects
 				(font
@@ -6509,7 +6605,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical"
+		(property "Footprint" "PCM_4ms_Resistor:R_1206_3216Metric"
 			(at 80.264 38.354 90)
 			(effects
 				(font
@@ -7125,7 +7221,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-8_W7.62mm_Socket"
+		(property "Footprint" "PCM_Package_SO_AKL:SOIC-8_3.9x4.9mm_P1.27mm"
 			(at 170.18 43.18 0)
 			(effects
 				(font
@@ -7211,7 +7307,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-8_W7.62mm_Socket"
+		(property "Footprint" "PCM_Package_SO_AKL:SOIC-8_3.9x4.9mm_P1.27mm"
 			(at 203.2 45.72 0)
 			(effects
 				(font
@@ -7298,7 +7394,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-8_W7.62mm_Socket"
+		(property "Footprint" "PCM_Package_SO_AKL:SOIC-8_3.9x4.9mm_P1.27mm"
 			(at 261.62 148.59 0)
 			(effects
 				(font
@@ -7384,7 +7480,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-8_W7.62mm_Socket"
+		(property "Footprint" "PCM_Package_SO_AKL:SOIC-8_3.9x4.9mm_P1.27mm"
 			(at 170.18 88.9 0)
 			(effects
 				(font
@@ -7470,7 +7566,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-8_W7.62mm_Socket"
+		(property "Footprint" "PCM_Package_SO_AKL:SOIC-8_3.9x4.9mm_P1.27mm"
 			(at 203.2 91.44 0)
 			(effects
 				(font
@@ -7557,7 +7653,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-8_W7.62mm_Socket"
+		(property "Footprint" "PCM_Package_SO_AKL:SOIC-8_3.9x4.9mm_P1.27mm"
 			(at 270.51 148.59 0)
 			(effects
 				(font
@@ -7642,7 +7738,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical"
+		(property "Footprint" "PCM_4ms_Resistor:R_1206_3216Metric"
 			(at 186.944 42.164 90)
 			(effects
 				(font
@@ -7709,7 +7805,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical"
+		(property "Footprint" "PCM_4ms_Resistor:R_1206_3216Metric"
 			(at 170.434 29.464 90)
 			(effects
 				(font
@@ -7776,7 +7872,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical"
+		(property "Footprint" "PCM_4ms_Resistor:R_1206_3216Metric"
 			(at 212.344 21.844 90)
 			(effects
 				(font
@@ -7843,7 +7939,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical"
+		(property "Footprint" "PCM_4ms_Resistor:R_1206_3216Metric"
 			(at 219.964 44.704 90)
 			(effects
 				(font
@@ -7910,7 +8006,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D4.0mm_W1.6mm_P3.0mm"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 203.2 30.48 0)
 			(effects
 				(font
@@ -7977,7 +8073,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Rect_L4.0mm_W2.0mm_P4.00mm"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 54.61 73.66 0)
 			(effects
 				(font
@@ -8116,7 +8212,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical"
+		(property "Footprint" "PCM_4ms_Resistor:R_1206_3216Metric"
 			(at 149.606 45.974 90)
 			(effects
 				(font
@@ -8185,7 +8281,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical"
+		(property "Footprint" "PCM_4ms_Resistor:R_1206_3216Metric"
 			(at 149.606 81.534 90)
 			(effects
 				(font
@@ -8252,7 +8348,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical"
+		(property "Footprint" "PCM_4ms_Resistor:R_1206_3216Metric"
 			(at 186.944 87.884 90)
 			(effects
 				(font
@@ -8319,7 +8415,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical"
+		(property "Footprint" "PCM_4ms_Resistor:R_1206_3216Metric"
 			(at 170.434 75.184 90)
 			(effects
 				(font
@@ -8386,7 +8482,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical"
+		(property "Footprint" "PCM_4ms_Resistor:R_1206_3216Metric"
 			(at 212.344 67.564 90)
 			(effects
 				(font
@@ -8453,7 +8549,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D4.0mm_W1.6mm_P3.0mm"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 203.2 76.2 0)
 			(effects
 				(font
@@ -8520,7 +8616,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical"
+		(property "Footprint" "PCM_4ms_Resistor:R_1206_3216Metric"
 			(at 219.964 90.424 90)
 			(effects
 				(font
@@ -8728,7 +8824,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 209.55 148.59 0)
+		(at 215.265 148.59 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8736,7 +8832,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000060f0cad7")
 		(property "Reference" "#PWR0120"
-			(at 209.55 154.94 0)
+			(at 215.265 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8745,7 +8841,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 209.677 152.9842 0)
+			(at 215.265 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8753,7 +8849,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 209.55 148.59 0)
+			(at 215.265 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8762,7 +8858,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 209.55 148.59 0)
+			(at 215.265 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8771,7 +8867,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 209.55 148.59 0)
+			(at 215.265 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8816,7 +8912,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_A-405_P2.54mm_Vertical_AnodeUp"
+		(property "Footprint" "Diode_SMD:D_1206_3216Metric"
 			(at 218.44 157.48 0)
 			(effects
 				(font
@@ -8884,7 +8980,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_A-405_P2.54mm_Vertical_AnodeUp"
+		(property "Footprint" "Diode_SMD:D_1206_3216Metric"
 			(at 218.44 139.7 0)
 			(effects
 				(font
@@ -8953,7 +9049,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Radial_D5.0mm_H11.0mm_P2.00mm"
+		(property "Footprint" "Capacitor_SMD:CP_Elec_3x5.3"
 			(at 228.2952 147.32 0)
 			(effects
 				(font
@@ -9022,7 +9118,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Radial_D5.0mm_H11.0mm_P2.00mm"
+		(property "Footprint" "Capacitor_SMD:CP_Elec_3x5.3"
 			(at 228.2952 157.48 0)
 			(effects
 				(font
@@ -9091,7 +9187,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 237.49 143.51 0)
 			(effects
 				(font
@@ -9160,7 +9256,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 237.49 153.67 0)
 			(effects
 				(font
@@ -9229,7 +9325,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 247.65 143.51 0)
 			(effects
 				(font
@@ -9298,7 +9394,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 247.65 153.67 0)
 			(effects
 				(font
@@ -9868,6 +9964,72 @@
 		)
 	)
 	(symbol
+		(lib_id "PCM_4ms_Power-symbol:PWR_FLAG")
+		(at 259.08 157.48 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "04b41a3c-7bfb-4b7d-b18d-9ba4605faa3a")
+		(property "Reference" "#FLG03"
+			(at 259.08 159.385 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 259.08 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 259.08 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 259.08 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 259.08 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ef457ffa-124d-4da2-a14c-1f343dcd399d")
+		)
+		(instances
+			(project ""
+				(path "/ad117810-8012-476c-89f1-2f634e0b0298"
+					(reference "#FLG03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND2")
 		(at 232.41 64.77 0)
 		(unit 1)
@@ -9886,7 +10048,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND2"
+		(property "Value" "GND"
 			(at 232.41 69.85 0)
 			(effects
 				(font
@@ -9952,7 +10114,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND2"
+		(property "Value" "GND"
 			(at 140.97 33.02 90)
 			(effects
 				(font
@@ -10001,17 +10163,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND2")
-		(at 216.535 148.59 180)
+		(lib_id "PCM_4ms_Power-symbol:PWR_FLAG")
+		(at 259.08 139.7 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "a415723a-e60e-40ac-ab38-91c054fd7233")
-		(property "Reference" "#PWR01"
-			(at 216.535 142.24 0)
+		(uuid "7161ef72-5ccc-45c3-add6-7f90790d3195")
+		(property "Reference" "#FLG02"
+			(at 259.08 137.795 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10019,8 +10181,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND2"
-			(at 216.535 143.51 0)
+		(property "Value" "PWR_FLAG"
+			(at 259.08 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10028,7 +10190,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 216.535 148.59 0)
+			(at 259.08 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10037,7 +10199,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 216.535 148.59 0)
+			(at 259.08 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10046,7 +10208,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 216.535 148.59 0)
+			(at 259.08 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10055,12 +10217,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "c02b1800-1b9f-445c-b75f-d8b50462ddac")
+			(uuid "64f2221f-6c14-445f-9862-4d909f176f86")
 		)
 		(instances
-			(project "Mixor-Image-v5"
+			(project ""
 				(path "/ad117810-8012-476c-89f1-2f634e0b0298"
-					(reference "#PWR01")
+					(reference "#FLG02")
 					(unit 1)
 				)
 			)
@@ -10085,7 +10247,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND2"
+		(property "Value" "GND"
 			(at 194.31 54.61 0)
 			(effects
 				(font
@@ -10133,6 +10295,71 @@
 		)
 	)
 	(symbol
+		(lib_id "PCM_4ms_Power-symbol:PWR_FLAG")
+		(at 161.29 45.72 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bf8b0309-3a8f-4f2d-8ac8-12ab0b83c9a5")
+		(property "Reference" "#FLG01"
+			(at 161.29 43.815 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 157.1625 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 161.29 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 161.29 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 161.29 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "64f2221f-6c14-445f-9862-4d909f176f86")
+		)
+		(instances
+			(project ""
+				(path "/ad117810-8012-476c-89f1-2f634e0b0298"
+					(reference "#FLG01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND2")
 		(at 139.7 175.26 90)
 		(unit 1)
@@ -10151,7 +10378,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND2"
+		(property "Value" "GND"
 			(at 143.51 175.26 90)
 			(effects
 				(font
@@ -10218,7 +10445,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND2"
+		(property "Value" "GND"
 			(at 194.31 99.695 0)
 			(effects
 				(font
@@ -10284,7 +10511,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND2"
+		(property "Value" "GND"
 			(at 153.67 68.58 0)
 			(effects
 				(font
@@ -10350,7 +10577,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND2"
+		(property "Value" "GND"
 			(at 161.29 52.07 0)
 			(effects
 				(font
@@ -10416,7 +10643,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND2"
+		(property "Value" "GND"
 			(at 161.29 97.79 0)
 			(effects
 				(font

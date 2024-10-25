@@ -706,6 +706,7 @@
   ],
   "text_variables": {
     "company": "Common Denominator Devices",
-    "product": "A Near Mix"
+    "product": "A Near Mix",
+    "revision": "6"
   }
 }
